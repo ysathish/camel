@@ -84,7 +84,7 @@ add the following line to it.
 
 After this you just need to run the following maven command:
 
-    $ mvn clean install spring-boot:run -Dspring-boot.run.arguments=--database.password=1234 -Dspring-boot.run.profiles=local
+    $ mvn clean install spring-boot:run -Dspring-boot.run.arguments=--database.password=postgres -Dspring-boot.run.profiles=local
 
 The `-Dspring-boot.run` command-line argument is defining a system variable called `database.password` avoiding to expose 
 production credentials in the repository. The `-Dspring-boot.run.profiles` tells Spring-Boot that it must read specific 
